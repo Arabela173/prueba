@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE-edge">
+	<title>Casos en México</title>
+	<link rel="stylesheet" type="text/css" href="Estilos3.css">
+	 <link rel="shortcut icon" href="favicon (2).ico" type="image/x-icon">
+	<meta name="viewport" content="width-device-width, initial-scale=1">
+	<script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+	<hr align="center" size="3"> <br>
+
+	<h1 align="center" style="font-size: 50px; color: rgb(28,62,26); ">COVID-19 EN MÉXICO</h1><br>
+	<div class="marco4"><img src="M.jpeg" style="float:right;"/ width="400" height="250" class="play"></div>
+			<p align="left" class="rightmargin"> <font color="Black" size="5" face="Script MT Bold"> <b> México presentó este Martes más decesos y contagios por el Covid-19 con 501 y 3 mil 455, respectivamente, con lo que acumulo 8 mil 134 decesos y 74 mil casos confirmados desde el principio de la pandemia. En la siguiente gráfica se muestra datos recientes de casos confirmados de Covid-19 que hay en México.</p> </font><br></b><br><br><br><br><br><br>
+			<hr align="center" size="3"> <br>
+			
+</head>
+<body>
+
+	<header>
+		<nav>
+			<ul>
+				 <li><a href="index.html"><span class="primero"><i class="icon icon-nextdoor"></i></span>Inicio</a></li>
+                <li><a href="#"><span class="segundo"><i class="icon icon-addthis"></i></span>Categorias</a>
+                    <ul>
+                        <li><a href="covid.html">¿Que es el covid-19?</a></li>
+                        <li><a href="Contagio.html">¿Como se transmite?</a></li>
+                        <li><a href="prevenir.html">¿Como prevenir el contagio?</a></li>
+                         <li><a href="Mexico.html">Casos en México</a></li>
+                        <li><a href="http://localhost/img/datos.php">Formulario</a></li>
+                    </ul>
+				</li>
+				<li><a href="#"><span class="tercero"><i class="icon icon-instagram"></i></span>Instagram</a>
+					<ul>
+						<li><a href="https://instagram.com/araceliyep?r=nametag">Yeyetzin Yep</a></li>
+						<li><a href="https://www.instagram.com/ale.gar28?r=nametag">Alejandra Garces</a></li>
+						<li><a href="https://instagram.com/belkys.rebeca?igshid=1c3jl8ii2t02l">Belkys Martinez</a></li>
+					</ul>
+				</li>
+				<li><a href="#"><span class="cuarto"><i class="icon icon-facebook"></i></span>Facebook</a>
+					<ul>
+						<li><a href="https://www.facebook.com/belkys.rebeca">Belkys Martinez</a></li>
+						<li><a href="https://www.facebook.com/yeyetzinaraceli.yepvelazquez">Yeyetzin Yep</a></li>
+						<li><a href="https://www.facebook.com/alejandra.garces.3133">Alejandra Garces</a></li>
+					</ul>
+				</li>
+				<li><a href="#"><span class="quinto"><i class="icon icon-viber"></i></span>Contacto</a>
+					<ul>
+						<li><a href="mailto:alejagarces2803@gmail.com">Alejandra Garces</a></li>
+						<li><a href="mailto:Belkys_1915@outlook.com">Belkys Martinez</a></li>
+						<li><a href="mailto:yeyetziin12345@gmail.com">Yeyetzin Yep</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+	</header>
+	<canvas id="Grafica" width="10" height="5">
+		
+	</canvas>
+</body>
+<script>
+	let miCanvas=document.getElementById("Grafica").getContext("2d");
+	var chart= new Chart(miCanvas,{
+		type:"line",
+		data:{
+			labels:["24-Marzo","31-Marzo","18-Abril","27-Abril","14-Mayo","24-Mayo"],
+			datasets:[
+			{
+				label:"Casos de Mexico",
+				data:[38,100,1089,835,2409,2764,1047],
+				backgroundColor:"rgb(13,124,34)",
+				borderColor:"rgb(18,63,26)",	
+				
+		 	
+			}
+			]
+		}
+	})
+</script>
+<div style="text-align: center;">
+	<br><br><br><video class="video" src="covid.mp4" controls width="500px" height="350px"></video></div>
+
+</div>
+
+</html>

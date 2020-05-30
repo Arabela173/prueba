@@ -1,0 +1,112 @@
+
+nav{
+	top: -70px;
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: 55px auto;
+	width: 50%;
+	max-width: 600px;
+}
+nav ul{
+	list-style: none;
+}
+nav > ul{
+	display: table;
+	width: 100%;
+	position: center;
+}
+nav > ul li{
+	display: table-cell;
+}
+nav > ul > li:hover > ul{
+	display: block;
+	height: 100%;
+}
+nav > ul > li > ul{
+	display: block;
+	position: absolute;
+	left: 0;
+	right: 0;
+	overflow: hidden;
+	height: 0%;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+}
+
+nav > ul li a{
+	color: #000000;
+	display: block;
+	line-height: 20px;
+	padding: 20px;
+	position: relative;
+	text-align: center;
+	text-decoration: none;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+}
+nav > ul > li > ul > li a:hover{
+	background: #5da5a2;
+}
+nav > ul > li > a span{
+	background: #174459;
+	display: block;
+	height: 100%;
+	width: 100%;
+	left: 0;
+	position: absolute;
+	top: -55px;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+
+}
+
+nav > ul > li > a span .icon{
+	display: block;
+	line-height: 60px;
+}
+nav > ul > li > a:hover > span{
+	top: 0;
+}
+nav ul li a .primero{
+	background: #0e5061
+}
+nav ul li a .segundo{
+	background: #925178
+}
+nav ul li a .tercero{
+	background: #002000
+}
+nav ul li a .cuarto{
+	background: #174459
+}
+nav ul li a .quinto{
+	background: #5da5a2
+}
+hr{
+	margin-top: -120px;
+}
+
+body{
+	margin-top: 10px;
+	padding:  40px ;
+	margin:  250px ;
+}
+	
+
+.video{
+	transition: 1s~ease-out;
+	border-radius: 30px;
+	border: groove;
+	box-shadow: 10px 15px 4px #A4C2AA;
+	margin-bottom: 50px;
+}

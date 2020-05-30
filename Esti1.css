@@ -1,0 +1,201 @@
+nav{
+	top: -60px;
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: 55px auto;
+	width: 60%;
+	max-width: 500px;
+}
+nav ul{
+	list-style: none;
+}
+nav > ul{
+	display: table;
+	width: 100%;
+	position: center;
+}
+nav > ul li{
+	display: table-cell;
+}
+nav > ul > li:hover > ul{
+	display: block;
+	height: 100%;
+}
+nav > ul > li > ul{
+	display: block;
+	position: absolute;
+	left: 0;
+	right: 0;
+	overflow: hidden;
+	height: 0%;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+}
+
+nav > ul li a{
+	color: #000000;
+	display: block;
+	line-height: 20px;
+	padding: 20px;
+	position: relative;
+	text-align: center;
+	text-decoration: none;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+}
+nav > ul > li > ul > li a:hover{
+	background: #5da5a2;
+}
+nav > ul > li > a span{
+	background: #174459;
+	display: block;
+	height: 100%;
+	width: 100%;
+	left: 0;
+	position: absolute;
+	top: -55px;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+
+}
+
+nav > ul > li > a span .icon{
+	display: block;
+	line-height: 60px;
+}
+nav > ul > li > a:hover > span{
+	top: 0;
+}
+nav ul li a .primero{
+	background: #0e5061
+}
+nav ul li a .segundo{
+	background: #925178
+}
+nav ul li a .tercero{
+	background: #002000
+}
+nav ul li a .cuarto{
+	background: #174459
+}
+nav ul li a .quinto{
+	background: #5da5a2
+}
+
+:root{
+	--colorTextos: #959C99;
+}
+*,
+::before,
+::after{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	font-family: 'icomoon';
+	background: #34e89e;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #0f3443, #34e89e);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #0f3443, #34e89e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    width: 100%;
+    height: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+h1{
+	text-align: center;
+	font-weight: 300;
+}
+form{
+	background: #fff;
+	padding: 40px, 0;
+	box-shadow: 0 0 6px 0 rgba(255,255,255,0.8);
+	border-radius: 10px;
+}
+.form{
+	width: 100%;
+	margin: auto;
+}
+form .grupo{
+	position: relative;
+	margin: 45px;
+}
+input{
+	background: none;
+	color: #0C3108;
+	font-size: 18px;
+	padding: 10px 10px 10px 5px;
+	display: block;
+	width: 100%;
+	border: none;
+	border-bottom: 1px solid var(--colorTextos);
+}
+input:focus{
+	 outline: none;
+	 color: rgb(94,93,93);
+}
+label{
+	color: var(--colorTextos);
+	font-size: 16px; 
+	position: absolute;
+	left: 5px;
+	top: 10px;
+	transition: 0.5s ease all;
+	pointer-events: none;
+}
+input:focus~label, input:valid~label{
+	top: -14px;
+	font-size: 12px;
+	color: #2196f3;
+}
+.barra{
+	position: relative;
+	display: block;
+	width: 100%
+}
+.barra::before{
+	content: "";
+	height: 2px;
+	width: 0%;
+	bottom: 0;
+	position: absolute; 
+	background: linear-gradient(to right, #0f3443, #34e89e);
+    transition: 0.3s ease width;
+    left: 0;
+}
+input:focus~.barra::before{
+	width: 100%;
+}
+button{
+	font-family: 'icomoon';
+	background: #34e89e;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #0f3443, #34e89e);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #0f3443, #34e89e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border: none;
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+    color: #fff;
+    height: 40px;
+    font-size: 16px;
+    cursor: pointer;
+}
+@media screen and (max-width:500px{
+	form{
+		width: 80%;
+	}
+
+}
+
